@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="room-booking.html">Room Booking</a>
+</nav>
+
+<center>
+<h1>🏨 Hotel Room Booking</h1>
+
+<form action="https://formspree.io/f/mykqwekk" method="POST">
+
+    <input type="hidden" name="_subject"
+           value="New Hotel Room Booking">
+
+    <input type="text" name="name"
+           placeholder="Full Name" required><br><br>
+
+    <input type="email" name="email"
+           placeholder="Email Address" required><br><br>
+
+    <input type="tel" name="phone"
+           placeholder="Phone Number" required><br><br>
+
+    <select name="hotel" required>
+        <option value="">Select Hotel</option>
+        <option>Taj Hotel</option>
+        <option>ITC Grand</option>
+        <option>Novotel</option>
+        <option>Marriott</option>
+    </select><br><br>
+
+    <select name="room_type" required>
+        <option value="">Select Room Type</option>
+        <option>Single Room</option>
+        <option>Double Room</option>
+        <option>Deluxe Room</option>
+        <option>Suite Room</option>
+    </select><br><br>
+
+    <label>Check-in Date</label><br>
+    <input type="date" name="checkin" required><br><br>
+
+    <label>Check-out Date</label><br>
+    <input type="date" name="checkout" required><br><br>
+
+    <input type="number" name="guests"
+           placeholder="Number of Guests" required><br><br>
+
+    <button type="submit">Book Room</button>
+
+</form>
+</center>
+
+</body>
+</html>
